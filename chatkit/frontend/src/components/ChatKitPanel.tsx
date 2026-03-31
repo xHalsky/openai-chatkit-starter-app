@@ -1,11 +1,17 @@
 import { ChatKit, useChatKit } from "@openai/chatkit-react";
-import { CHATKIT_API_DOMAIN_KEY, CHATKIT_API_URL } from "../lib/config";
 
 export function ChatKitPanel() {
   const chatkit = useChatKit({
-    api: { url: CHATKIT_API_URL, domainKey: CHATKIT_API_DOMAIN_KEY },
+    api: {
+      async getClientSecret() {
+        const res = await fetch("/api/create-session", { method: "POST" });
+        const { client_secret } = await res.json();
+        return client_secret;
+      },
+    },
     composer: {
-      // File uploads are disabled for the demo backend.
+      placeholder:
+        "Paste your event details here (title, date, description, presenters, agenda)…",
       attachments: { enabled: false },
     },
   });

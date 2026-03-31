@@ -1,0 +1,2289 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketing Form</title>
+    <meta name="referrer" content="never">
+    <meta type="xrm/designer/setting" name="type" value="marketing-designer-content-editor-document">
+    <meta type="xrm/designer/setting" name="layout-editable" value="marketing-designer-layout-editable">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&amp;display=swap" rel="stylesheet">
+
+
+
+
+    <style>
+        body {
+            font-family: Mulish, sans-serif;
+            background-color: #f9fafc !important;
+        }
+
+        .editor-control-layout html {
+            box-sizing: border-box;
+            background-color: rgb(244, 249, 253);
+        }
+
+        .editor-control-layout *,
+        .editor-control-layout ::before,
+        .editor-control-layout ::after {
+            box-sizing: inherit;
+        }
+
+        .marketingForm h1 {
+            color: rgb(0, 0, 0);
+            margin: 0px;
+            padding: 0px;
+            width: 100%;
+            font-family: Mulish, sans-serif;
+            line-height: 1.25;
+            font-size: 28px;
+        }
+
+        .marketingForm h2 {
+            color: rgb(51, 51, 51);
+            margin: 0px;
+            padding: 0px;
+            width: 100%;
+            line-height: 1.25;
+            font-family: Mulish, sans-serif;
+            font-size: 22px;
+        }
+
+        .marketingForm h3 {
+            color: rgb(0, 0, 0);
+            margin: 0px;
+            padding: 0px;
+            width: 100%;
+            line-height: 1.25;
+            font-family: Mulish, sans-serif;
+            font-size: 18px;
+        }
+
+        .marketingForm p {
+            margin: 0px;
+            padding: 0px;
+            line-height: 1.25;
+            font-family: Mulish, sans-serif;
+            font-size: 14px;
+        }
+
+        .marketingForm a,
+        div[data-editorblocktype="Captcha"] td:nth-of-type(2) a {
+            text-decoration: none;
+            font-family: Mulish, sans-serif;
+            font-size: 14px;
+        }
+
+        .marketingForm .primaryButtonWrapper,
+        .submitButtonWrapper {
+            text-align: center;
+            margin: 10px 0px;
+        }
+
+        .marketingForm .primaryButton,
+        .submitButton {
+            font-family: Mulish, sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 22px;
+            background-color: rgb(34, 102, 227);
+            border: none;
+            border-radius: 4px;
+            color: rgb(255, 255, 255);
+            padding: 10px 20px;
+            cursor: pointer;
+            box-sizing: border-box;
+            width: 100% !important;
+            display: block !important;
+        }
+
+        .marketingForm .secondaryButton {
+            font-family: Mulish, sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 22px;
+            background-color: rgb(255, 255, 255);
+            border: 1px solid rgb(0, 130, 221);
+            border-radius: 4px;
+            color: rgb(34, 102, 227);
+            padding: 10px 20px;
+            margin: 0px;
+            cursor: pointer;
+        }
+
+        .marketingForm .error {
+            font-family: Mulish, sans-serif;
+            font-weight: bold;
+            font-size: 8px;
+            margin: 0px;
+            padding: 0px;
+            color: rgb(168, 0, 0);
+        }
+
+        .zero-state-container span {
+            font-family: Mulish, sans-serif;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 26px;
+            color: rgb(36, 36, 36);
+        }
+
+        form.marketingForm {
+            color: rgb(0, 0, 0);
+            font-family: Mulish, sans-serif;
+            font-size: 14px;
+        }
+
+        [data-layout="true"] {
+            margin: 0px auto;
+            max-width: 1200px;
+            background-color: rgba(250, 250, 250, 0);
+        }
+
+        div[data-editorblocktype="SubmitButton"] {
+            padding: 20px 10px;
+        }
+
+        div[data-editorblocktype="Captcha"] {
+            padding: 20px 12%;
+        }
+
+        div[data-editorblocktype="Captcha"] table,
+        div[data-editorblocktype="Captcha"] div>table>tbody>tr>td:nth-of-type(2) {
+            width: 100% !important;
+        }
+
+        div[data-editorblocktype="Captcha"] div>div>table>tbody>tr:first-of-type>td:last-of-type {
+            padding-bottom: 12px !important;
+        }
+
+        div[data-editorblocktype="Captcha"] tr[id="wlspispHIPErrorContainer"] {
+            margin-top: 20px;
+        }
+
+        div[data-editorblocktype="Captcha"] tr[id="wlspispHIPErrorContainer"] td:nth-of-type(2) {
+            width: auto !important;
+        }
+
+        div[data-editorblocktype="Captcha"] tr[id="wlspispHIPErrorContainer"] img {
+            display: flex;
+        }
+
+        div[data-editorblocktype="Captcha"] td:nth-of-type(2)>div>div {
+            margin-top: 4px;
+        }
+
+        div[data-editorblocktype="Captcha"] td:nth-of-type(2)>div>div * {
+            font-weight: 400;
+        }
+
+        div[data-editorblocktype="Captcha"] td:nth-of-type(2)>div>div b {
+            color: rgb(121, 119, 117);
+        }
+
+        div[data-editorblocktype="Captcha"] tr:nth-of-type(2)>td {
+            height: 0px !important;
+        }
+
+        div[data-editorblocktype="Captcha"] td input {
+            margin-top: 20px !important;
+            padding: 6px 8px !important;
+            width: 100% !important;
+        }
+
+        div[data-editorblocktype="Captcha"] div[id^="wlspaudioBtnHolder"] {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        div[data-editorblocktype="About"],
+        div[data-editorblocktype="Sessions"],
+        div[data-editorblocktype="Speakers"] {
+            padding: 32px 24px;
+        }
+
+        div[data-editorblocktype="Sessions"] h2 {
+            margin-bottom: 32px;
+            text-align: center;
+        }
+
+        .textFormFieldBlock,
+        .dateTimeFormFieldBlock,
+        .twoOptionFormFieldBlock,
+        .optionSetFormFieldBlock,
+        .multiOptionSetFormFieldBlock,
+        .lookupFormFieldBlock {
+            padding: 0px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        table.multi .textFormFieldBlock,
+        table.multi .dateTimeFormFieldBlock,
+        table.multi .twoOptionFormFieldBlock,
+        table.multi .optionSetFormFieldBlock,
+        table.multi .multiOptionSetFormFieldBlock,
+        table.multi .lookupFormFieldBlock {
+            padding: 10px;
+        }
+
+        .consentBlock {
+            padding: 4px 30px;
+        }
+
+        .textFormFieldBlock label,
+        .dateTimeFormFieldBlock label,
+        .lookupFormFieldBlock label,
+        .twoOptionFormFieldBlock label.block-label,
+        .optionSetFormFieldBlock label.block-label,
+        .multiOptionSetFormFieldBlock label.block-label,
+        div[data-editorblocktype="Captcha"] label[id^="wlspispHipInstructionContainer"],
+        .textFormFieldBlock label *,
+        .dateTimeFormFieldBlock label *,
+        .lookupFormFieldBlock label *,
+        .twoOptionFormFieldBlock label.block-label *,
+        .optionSetFormFieldBlock label.block-label *,
+        .multiOptionSetFormFieldBlock label.block-label *,
+        .consentBlock label p {
+            font-family: Mulish, sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            color: rgb(50, 49, 48);
+        }
+
+        .textFormFieldBlock label,
+        .dateTimeFormFieldBlock label,
+        .lookupFormFieldBlock label,
+        .twoOptionFormFieldBlock label.block-label,
+        .optionSetFormFieldBlock label.block-label,
+        .multiOptionSetFormFieldBlock label.block-label,
+        div[data-editorblocktype="Captcha"] label[id^="wlspispHipInstructionContainer"] {
+            display: inline-block;
+            margin: 4px 0px -10px;
+            padding: 0px;
+            flex: 1 1 0%;
+            width: 100%;
+        }
+
+        .textFormFieldBlock label>*,
+        .dateTimeFormFieldBlock label>*,
+        .lookupFormFieldBlock label>*,
+        .twoOptionFormFieldBlock label.block-label>*,
+        .optionSetFormFieldBlock label.block-label>*,
+        .multiOptionSetFormFieldBlock label.block-label>*,
+        .consentBlock label>* {
+            display: inline-block;
+        }
+
+        .textFormFieldBlock label::after,
+        .twooption_checkbox label::after,
+        .dateTimeFormFieldBlock label::after,
+        .lookupFormFieldBlock label::after,
+        .twoOptionFormFieldBlock label.block-label::after,
+        .twoOptionFormFieldBlock div.twooption_checkbox label::after,
+        .optionSetFormFieldBlock label.block-label::after,
+        .multiOptionSetFormFieldBlock label.block-label::after,
+        .consentBlock label p:first-of-type::after,
+        .eventSession label::after,
+        div[data-editorblocktype="Sessions"] h2::after,
+        div[data-editorblocktype="Captcha"] label[id^="wlspispHipInstructionContainer"]::after {
+            width: 22px;
+            display: inline-block;
+            line-height: 22px;
+            text-align: center;
+            color: rgb(195, 52, 0);
+            content: "*";
+            visibility: hidden;
+        }
+
+        div[data-required].textFormFieldBlock label::after,
+        div[data-required].dateTimeFormFieldBlock label::after,
+        div[data-required].lookupFormFieldBlock label::after,
+        div[data-required] div.twooption_checkbox label::after,
+        div[data-required] label.block-label::after,
+        div[data-required="true"].consentBlock label p:first-of-type::after,
+        div[data-editorblocktype="Sessions"][data-required="true" i] h2::after,
+        div[data-editorblocktype="Captcha"] label[id^="wlspispHipInstructionContainer"]::after {
+            visibility: visible;
+        }
+
+        .eventSessions div.eventSession div input[type="checkbox"]:checked+label::after,
+        .eventSessions div.eventSession div input[type="radio"]:checked+label::after {
+            visibility: visible;
+        }
+
+        .optionSetFormFieldBlock select,
+        .textFormFieldBlock input,
+        .dateTimeFormFieldBlock input,
+        .lookupFormFieldBlock input,
+        .marketingForm textarea,
+        div[data-editorblocktype="Captcha"] input {
+            font-family: Mulish, sans-serif;
+            padding: 12px;
+            background-color: rgb(255, 255, 255);
+            border: 1px solid rgb(225, 223, 221);
+            border-radius: 8px;
+            display: block;
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            font-size: 14px;
+            flex: 2 1 20%;
+        }
+
+        .optionSetFormFieldBlock select,
+        .textFormFieldBlock input::placeholder,
+        .dateTimeFormFieldBlock input,
+        .lookupFormFieldBlock input::placeholder,
+        .marketingForm textarea::placeholder,
+        div[data-editorblocktype="Captcha"] input::placeholder {
+            color: rgb(156, 163, 175);
+            opacity: 0.8;
+        }
+
+        .textFormFieldBlock textarea {
+            resize: vertical;
+            height: 120px;
+        }
+
+        .lookupFormFieldBlock input {
+            background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDQ4IDIwNDgiPjxwYXRoIGQ9Ik0xMzQ0IDBxOTcgMCAxODcgMjV0MTY4IDcxIDE0MiAxMTAgMTExIDE0MyA3MSAxNjggMjUgMTg3cTAgOTctMjUgMTg3dC03MSAxNjgtMTEwIDE0Mi0xNDMgMTExLTE2OCA3MS0xODcgMjVxLTEyNSAwLTIzOS00MnQtMjExLTEyMWwtNzg1IDc4NHEtMTkgMTktNDUgMTl0LTQ1LTE5LTE5LTQ1cTAtMjYgMTktNDVsNzg0LTc4NXEtNzktOTYtMTIxLTIxMHQtNDItMjQwcTAtOTcgMjUtMTg3dDcxLTE2OCAxMTAtMTQyVDk4OSA5NnQxNjgtNzEgMTg3LTI1em0wIDEyODBxMTE5IDAgMjI0LTQ1dDE4My0xMjQgMTIzLTE4MyA0Ni0yMjRxMC0xMTktNDUtMjI0dC0xMjQtMTgzLTE4My0xMjMtMjI0LTQ2cS0xMTkgMC0yMjQgNDVUOTM3IDI5NyA4MTQgNDgwdC00NiAyMjRxMCAxMTkgNDUgMjI0dDEyNCAxODMgMTgzIDEyMyAyMjQgNDZ6Ii8+PC9zdmc+");
+            background-repeat: no-repeat;
+            background-position: 98% center;
+            background-size: 1em 1em;
+        }
+
+        .optionSetFormFieldBlock select {
+            background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iNyIgdmlld0JveD0iMCAwIDEyIDciIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik02IDYuNzA4OThMMC4xNDY0ODQgMC44NTU0NjlMMC44NTU0NjkgMC4xNDY0ODRMNiA1LjI5MTAyTDExLjE0NDUgMC4xNDY0ODRMMTEuODUzNSAwLjg1NTQ2OUw2IDYuNzA4OThaIiBmaWxsPSIjNjA1RTVDIi8+Cjwvc3ZnPgo=");
+            background-repeat: no-repeat;
+            background-position: 98% center;
+            appearance: none;
+        }
+
+        .optionSetFormFieldBlock select option {
+            background-color: rgb(250, 249, 248);
+        }
+
+        /* Header wrapper for full width and sticky positioning */
+        .custom-header-wrapper {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background-color: #ffffff;
+            border-bottom: 1px solid #e2e8f0;
+            width: 100%;
+        }
+
+        /* Inner container for max width and alignment */
+        .custom-header-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            height: 64px;
+            padding: 0 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+        /* Logo link wrapper */
+        .header-logo-link {
+            display: flex;
+            align-items: center;
+            flex-shrink: 0;
+            text-decoration: none;
+        }
+
+        /* Logo image */
+        .header-logo-img {
+            height: 24px;
+            width: auto;
+            display: block;
+        }
+
+        /* Social icons container */
+        .header-social-container {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+
+        /* Individual social icon link */
+        .header-social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #64748b;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        /* Hover state for social links */
+        .header-social-link:hover {
+            color: #0f172a;
+        }
+
+        /* SVG icon sizing */
+        .header-social-icon {
+            width: 20px;
+            height: 20px;
+        }
+
+        /* Mobile adjustments */
+        @media only screen and (max-width: 600px) {
+            .custom-header-inner {
+                padding: 0 16px;
+                gap: 20px;
+            }
+        }
+
+        .twoOptionFormFieldBlock div.radiobuttons,
+        .twoOptionFormFieldBlock div.twooption_checkbox,
+        .optionSetFormFieldBlock div.radiobuttons,
+        .multiOptionSetFormFieldBlock fieldset {
+            font-family: Mulish, sans-serif;
+            font-size: 14px;
+            border: none;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0px;
+            gap: 8px;
+            flex: 2 1 0%;
+        }
+
+        .twoOptionFormFieldBlock div.radiobuttons,
+        .optionSetFormFieldBlock div.radiobuttons,
+        .multiOptionSetFormFieldBlock fieldset {
+            margin-top: 16px;
+        }
+
+        .twoOptionFormFieldBlock div.radiobuttons>div,
+        .twoOptionFormFieldBlock div.twooption_checkbox>div,
+        .optionSetFormFieldBlock div.radiobuttons>div,
+        .multiOptionSetFormFieldBlock fieldset>div,
+        .consentBlock>div {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 0px;
+            gap: 8px;
+        }
+
+        .twoOptionFormFieldBlock div.radiobuttons div label,
+        .optionSetFormFieldBlock div.radiobuttons div label {
+            font-family: Mulish, sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+        }
+
+        .twoOptionFormFieldBlock div.twooption_checkbox div label,
+        .twoOptionFormFieldBlock div.twooption_checkbox div label div,
+        .consentBlock div label p {
+            font-family: Mulish, sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+        }
+
+        .eventSessions div.eventSession div label,
+        .eventSessions div.eventSession div label div {
+            font-family: Mulish, sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 20px;
+        }
+
+        .multiOptionSetFormFieldBlock fieldset>div>label {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        .optionSetFormFieldBlock div.radiobuttons div input[type="radio"]:checked+label,
+        .twoOptionFormFieldBlock div.radiobuttons div input[type="radio"]:checked+label {}
+
+        .twoOptionFormFieldBlock div.twooption_checkbox div input[type="checkbox"]:checked+label,
+        .twoOptionFormFieldBlock div.twooption_checkbox div input[type="checkbox"]:checked+label div,
+        .consentBlock div input[type="checkbox"]:checked+label p {}
+
+        .eventSessions div.eventSession div input[type="checkbox"]:checked+label,
+        .eventSessions div.eventSession div input[type="checkbox"]:checked+label div,
+        .eventSessions div.eventSession div input[type="radio"]:checked+label,
+        .eventSessions div.eventSession div input[type="radio"]:checked+label div {
+            text-decoration: none;
+            font-weight: 400;
+            color: rgb(0, 0, 0);
+        }
+
+        .twoOptionFormFieldBlock div.radiobuttons,
+        .optionSetFormFieldBlock div.radiobuttons {
+            padding: 0px;
+            margin: 0px;
+            border-radius: 0px;
+        }
+
+        .twoOptionFormFieldBlock div.twooption_checkbox>div,
+        .consentBlock>div {
+            width: 100%;
+            border-radius: 0px;
+            background-color: transparent;
+        }
+
+        .eventSessions div.eventSession>div {
+            width: 100%;
+            border-radius: 0px;
+            background-color: transparent;
+        }
+
+        .twoOptionFormFieldBlock div.radiobuttons div,
+        .optionSetFormFieldBlock div.radiobuttons div {
+            width: 100%;
+        }
+
+        .twoOptionFormFieldBlock div.twooption_checkbox div,
+        .consentBlock div {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .eventSessions div.eventSession div {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        div[data-editorblocktype="Sessions"] .eventSessions div.eventSession {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 16px;
+        }
+
+        .eventSessions div.eventSession div.eventSessionDescription>p:not(:first-child) {
+            font-size: 12px;
+            margin-top: 4px;
+        }
+
+        .eventSessions div.eventSession div.eventSessionDescription p .sessionFullMessage {
+            color: rgb(191, 0, 119);
+        }
+
+        .eventSessions div.eventSession:not(:last-child) {
+            margin-bottom: 16px;
+        }
+
+        .eventSessions div.eventSession div.eventSessionInput {
+            flex: 0 1 0%;
+        }
+
+        .eventSessions div.eventSession div.eventSessionDescription {
+            flex: 1 1 0%;
+        }
+
+        .twoOptionFormFieldBlock div.radiobuttons div input,
+        .twoOptionFormFieldBlock div.twooption_checkbox div input,
+        .optionSetFormFieldBlock div.radiobuttons div input,
+        .multiOptionSetFormFieldBlock fieldset>div>input[type="checkbox"],
+        .eventSession>div>input[type="checkbox"],
+        .eventSession>div>input[type="radio"],
+        .consentBlock div input {
+            margin: 0px;
+            box-sizing: border-box;
+            width: 20px;
+            height: 20px;
+            border: 1px solid rgb(50, 49, 48);
+            border-radius: 12px;
+            accent-color: rgb(0, 120, 212);
+            flex-shrink: 0;
+        }
+
+        .eventSessions {
+            font-size: 16px;
+            line-height: 1.2;
+            border: none;
+        }
+
+        .eventSession label b {
+            display: inline;
+        }
+
+        .marketingForm [dir="rtl"],
+        .marketingForm [dir="rtl"] * {
+            text-align: right;
+        }
+
+        .marketingForm s span {
+            text-decoration: line-through;
+        }
+
+        .marketingForm u span {
+            text-decoration: underline;
+        }
+
+        .dividerWrapper p span {
+            line-height: 0px;
+        }
+
+        .marketingForm ul,
+        .marketingForm ol {
+            margin-top: 15px;
+            margin-bottom: 15px;
+            line-height: 1.25;
+            padding-inline-end: 0px !important;
+        }
+
+        .marketingForm p img {
+            max-width: 100%;
+        }
+
+        .marketingForm u a {
+            text-decoration: underline;
+        }
+
+        .marketingForm .imageWrapper a img {
+            text-decoration: none;
+            border: 0px;
+        }
+
+        .marketingForm th.columnContainer,
+        .marketingForm th.inner {
+            font-weight: normal;
+            text-align: left;
+        }
+
+        .marketingForm [dir="rtl"] th.columnContainer,
+        .marketingForm [dir="rtl"] th.inner {
+            font-weight: normal;
+            text-align: right;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .marketingForm a span {
+                line-height: inherit !important;
+            }
+
+            .marketingForm .multi table {
+                table-layout: fixed;
+                height: auto !important;
+            }
+
+            .marketingForm .multi td {
+                width: auto !important;
+                min-height: auto !important;
+            }
+
+            .marketingForm .multi tbody,
+            .marketingForm .multi tbody tr,
+            .marketingForm .multi tbody tr td,
+            .marketingForm .multi tbody tr th,
+            .marketingForm .outer tbody,
+            .marketingForm .outer tbody tr,
+            .marketingForm .outer tbody tr td,
+            .marketingForm .outer tbody tr th {
+                display: block;
+                box-sizing: border-box;
+                height: auto !important;
+                min-height: auto !important;
+            }
+
+            .marketingForm .wrap-section .multi tbody,
+            .marketingForm .wrap-section .multi tbody tr,
+            .marketingForm .wrap-section .multi tbody tr td,
+            .marketingForm .wrap-section .multi tbody tr th,
+            .marketingForm .wrap-section .outer tbody,
+            .marketingForm .wrap-section .outer tbody tr,
+            .marketingForm .wrap-section .outer tbody tr td,
+            .marketingForm .wrap-section .outer tbody tr th {
+                width: 100% !important;
+            }
+
+            .marketingForm .multi .inner {
+                height: auto !important;
+                min-height: auto !important;
+            }
+
+            .marketingForm .tbContainer .inner {
+                box-sizing: border-box;
+            }
+
+            .marketingForm .outer {
+                width: 100% !important;
+            }
+
+            .marketingForm .tbContainer .columnContainer table {
+                table-layout: fixed !important;
+            }
+
+            .marketingForm .innerTable {
+                min-height: auto !important;
+            }
+
+            .marketingForm .no-wrap-section .outer {
+                display: table !important;
+            }
+
+            .marketingForm .no-wrap-section .multi table {
+                height: 100% !important;
+            }
+
+            .marketingForm .no-wrap-section .multi tbody,
+            .marketingForm .no-wrap-section .outer tbody {
+                display: table-row-group !important;
+                width: 100% !important;
+            }
+
+            .marketingForm .no-wrap-section .multi tbody tr,
+            .marketingForm .no-wrap-section .outer tbody tr {
+                display: table-row !important;
+                width: 100% !important;
+            }
+
+            .marketingForm .no-wrap-section .multi tbody tr td,
+            .marketingForm .no-wrap-section .multi tbody tr th,
+            .marketingForm .no-wrap-section .outer tbody tr td,
+            .marketingForm .no-wrap-section .outer tbody tr th {
+                display: table-cell !important;
+            }
+
+            .marketingForm .no-wrap-section.columns-equal-class .outer tbody tr td,
+            .marketingForm .no-wrap-section.columns-equal-class .outer tbody tr th {
+                height: 0px !important;
+            }
+
+            .marketingForm .no-wrap-section .outer tbody tr td.inner,
+            .marketingForm .no-wrap-section .outer tbody tr th.inner {
+                width: 100% !important;
+                height: auto !important;
+            }
+
+            .marketingForm a[x-apple-data-detectors] {
+                color: inherit !important;
+                text-decoration: none !important;
+                font-size: inherit !important;
+                font-family: inherit !important;
+                font-weight: inherit !important;
+                line-height: inherit !important;
+            }
+        }
+
+        .notification-container {
+            margin: 10px;
+        }
+
+        /* Form row grid layout */
+        .form-row-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        /* Mobile adjustments for form grid */
+        @media only screen and (max-width: 600px) {
+            .form-row-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Force input width */
+        .form-row-grid input,
+        .form-row-grid select {
+            width: 100% !important;
+            min-width: 100% !important;
+            box-sizing: border-box !important;
+        }
+
+        .notification-message {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 38px;
+            border: 1.44737px solid rgb(204, 204, 204);
+            border-radius: 10px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        .notification-message-hide {
+            display: none;
+        }
+
+        .phoneFormFieldBlock {
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        table.multi .phoneFormFieldBlock {
+            padding: 10px;
+        }
+
+        .phoneFormFieldBlock label,
+        .phoneFormFieldBlock label * {
+            font-family: Mulish, sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            color: rgb(50, 49, 48);
+        }
+
+        .phoneFormFieldBlock label {
+            display: inline-block;
+            margin: 4px 0px -10px;
+            padding: 0px;
+            flex: 1 1 0%;
+            width: 100%;
+        }
+
+        .phoneFormFieldBlock label>* {
+            display: inline-block;
+        }
+
+        .phoneFormFieldBlock label::after {
+            width: 22px;
+            display: inline-block;
+            line-height: 22px;
+            text-align: center;
+            color: rgb(195, 52, 0);
+            content: "*";
+            visibility: hidden;
+        }
+
+        div[data-required].phoneFormFieldBlock label::after {
+            visibility: visible;
+        }
+
+        .phoneFormFieldBlock input::placeholder {
+            color: rgb(156, 163, 175);
+            opacity: 0.8;
+        }
+
+        .phoneFormFieldBlock .phoneCountryCode {
+            display: flex;
+            flex: 2 1 20%;
+            align-items: center;
+            flex-direction: row;
+            box-sizing: border-box;
+            border: 1px solid rgb(225, 223, 221);
+            border-radius: 8px;
+            justify-content: center;
+            background-color: transparent;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+        }
+
+        .phoneFormFieldBlock .phoneCountryCodeLabel {
+            overflow: hidden;
+            margin: 0px;
+            cursor: pointer;
+            padding-left: 8px;
+            padding-right: 8px;
+            opacity: 1;
+            text-align: center;
+            color: rgb(96, 94, 92);
+            background-color: rgb(243, 242, 241);
+            align-items: center;
+            align-self: stretch;
+            display: flex;
+        }
+
+        .phoneFormFieldBlock span[hidden] {
+            display: none;
+        }
+
+        .phoneFormFieldBlock input {
+            font-family: Mulish, sans-serif;
+            padding: 12px;
+            background-color: rgb(255, 255, 255);
+            display: block;
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            font-size: 14px;
+            flex: 2 1 0%;
+            border: none;
+        }
+
+        /* Grid layout for speakers */
+        .speakers-grid-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+        }
+
+        /* 2 columns on larger screens */
+        @media (min-width: 600px) {
+            .speakers-grid-container {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        /* Individual speaker card styling and hover */
+        .speaker-card-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            background-color: #ffffff;
+            padding: 12px;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02);
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+
+        /* Card hover effects */
+        .speaker-card-item:hover {
+            border-color: #cbd5e1;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        /* Image wrapper constraints */
+        .speaker-img-container {
+            width: 48px;
+            height: 48px;
+            flex-shrink: 0;
+        }
+
+        /* Text container constraints */
+        .speaker-text-container {
+            flex: 1;
+            min-width: 0;
+        }
+
+        /* Truncate text utility */
+        .speaker-text-truncate {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        /* Checkbox and label vertical alignment */
+        .consentBlock>div {
+            display: flex !important;
+            align-items: center !important;
+        }
+
+        /* Reset input margin */
+        .consentBlock input[type="checkbox"] {
+            margin: 0 !important;
+        }
+
+        /* Reset label text margins */
+        .consentBlock label,
+        .consentBlock label p {
+            margin: 0 !important;
+            padding: 0 !important;
+            line-height: 1.4 !important;
+        }
+
+        /* Wrapper to handle rounded corners and border */
+        .agenda-table-wrapper {
+            background-color: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02);
+            overflow: hidden;
+            margin: 20px 0;
+            width: 100%;
+        }
+
+        /* Classic table styling */
+        .modern-agenda-table {
+            width: 100%;
+            border-collapse: collapse;
+            border-spacing: 0;
+            font-family: 'Mulish', sans-serif;
+            text-align: left;
+        }
+
+        /* Header styling */
+        .modern-agenda-table th {
+            background-color: #f8fafc;
+            border-bottom: 1px solid #e2e8f0;
+            padding: 16px 20px;
+            font-size: 12px;
+            font-weight: 700;
+            color: #64748b;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* Cell styling */
+        .modern-agenda-table td {
+            padding: 16px 20px;
+            border-bottom: 1px solid #e2e8f0;
+            vertical-align: top;
+        }
+
+        /* Remove bottom border from last row */
+        .modern-agenda-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* Column widths for desktop */
+        .agenda-col-time {
+            width: 140px;
+        }
+
+        .agenda-col-speaker {
+            width: 220px;
+        }
+
+        /* Mobile responsiveness */
+        @media only screen and (max-width: 768px) {
+            .modern-agenda-table thead {
+                display: none;
+                /* Hide headers on mobile */
+            }
+
+            .modern-agenda-table,
+            .modern-agenda-table tbody,
+            .modern-agenda-table tr,
+            .modern-agenda-table td {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            .modern-agenda-table tr {
+                border-bottom: 1px solid #e2e8f0;
+                padding: 8px 0;
+            }
+
+            .modern-agenda-table tr:last-child {
+                border-bottom: none;
+            }
+
+            .modern-agenda-table td {
+                padding: 6px 16px;
+                border-bottom: none;
+            }
+
+            .modern-agenda-table td:empty {
+                display: none;
+                /* Hide empty cells to save space */
+            }
+        }
+    </style>
+
+
+
+
+</head>
+
+<body dir="ltr">
+    <script>
+        var queryForm = function (settings) {
+            var reset = settings && settings.reset ? settings.reset : false;
+            var self = window.location.toString();
+            var querystring = self.split("?");
+            if (querystring.length > 1) {
+                var pairs = querystring[1].split("&");
+                for (i in pairs) {
+                    var keyval = pairs[i].split("=");
+                    if (reset || sessionStorage.getItem(keyval[0]) === null) {
+                        sessionStorage.setItem(keyval[0], decodeURIComponent(keyval[1]));
+                    }
+                }
+            }
+            if (document.getElementsByName("apn_referrerurl")[0])
+                document.getElementsByName("apn_referrerurl")[0].value = document.referrer;
+            if (document.getElementsByName("apn_utmsource")[0])
+                document.getElementsByName("apn_utmsource")[0].value = sessionStorage.getItem("utm_source");
+            if (document.getElementsByName("apn_utmmedium")[0])
+                document.getElementsByName("apn_utmmedium")[0].value = sessionStorage.getItem("utm_medium");
+            if (document.getElementsByName("apn_utmcampaign")[0])
+                document.getElementsByName("apn_utmcampaign")[0].value = sessionStorage.getItem("utm_campaign");
+            if (document.getElementsByName("apn_utmcontent")[0])
+                document.getElementsByName("apn_utmcontent")[0].value = sessionStorage.getItem("utm_content");
+        }
+        setTimeout(function () { queryForm(); }, 3000);
+    </script>
+    <script>
+        const interval = setInterval(() => {
+            const geolocationdata = document?.querySelector('textarea[name="apn_geolocationdata"]');
+            if (geolocationdata) {
+                let geolocationapi = 'https://api.ipregistry.co/?key=ira_t8NfpqkBQWbkuebwigr5f9R5eUd1er1HGSFP';
+                fetch(geolocationapi)
+                    .then(response => {
+                        if (response.ok) return response.json();
+                        else throw new Error('Error fetching geolocation data: ' + response.statusText);
+                    })
+                    .then(data => {
+                        geolocationdata.value = JSON.stringify(data, null, 4);
+                    })
+                    .catch(error => {
+                        console.error('Error fetching geolocation data:', error);
+                    })
+                    .finally(() => {
+                        clearInterval(interval);
+                    });
+            } else {
+                console.log('Geolocation data field not loaded');
+            }
+        }, 1000);
+    </script>
+    <script>
+        document.addEventListener("d365mkt-formsubmit", function (event) {
+            // Find email input by name attribute (more reliable than label lookup)
+            var emailInput = document.querySelector('input[name="emailaddress1"]');
+
+            if (!emailInput) {
+                console.log("Email input not found");
+                return;
+            }
+
+            var email = emailInput.value.toLowerCase();
+
+            // Check against blocked domains
+            var blockedDomains = ["gmail", "yahoo", "google", "hotmail", "wp.pl", "onet", "outlook.com"];
+            var isBlocked = blockedDomains.some(function (domain) {
+                return email.includes(domain);
+            });
+
+            if (isBlocked) {
+                event.preventDefault();
+                console.log("Blocked mkt-formsubmit - personal email detected");
+
+                // Remove any existing warning messages
+                var existingWarning = emailInput.parentNode.querySelector('.email-warning');
+                if (existingWarning) {
+                    existingWarning.remove();
+                }
+
+                // Display a warning message to the user
+                var warningMessage = "Użyj firmowego adresu e-mail — adresy z prywatnych domen (np. Gmail, Outlook, Onet) nie są akceptowane.";
+                var warningElement = document.createElement("p");
+                warningElement.textContent = warningMessage;
+                warningElement.className = 'email-warning';
+                warningElement.style.color = "#a80000";
+                warningElement.style.fontStyle = "italic";
+                warningElement.style.fontSize = "12px";
+                warningElement.style.marginTop = "5px";
+
+                // Insert warning after the input field
+                emailInput.parentNode.insertBefore(warningElement, emailInput.nextSibling);
+
+                return;
+            }
+
+            console.log("Form submission allowed - business email detected");
+            console.log("mkt-formsubmit" + JSON.stringify(event.detail.payload));
+        });
+    </script>
+
+    <div class="custom-header-wrapper">
+        <div class="custom-header-inner">
+            <a href="https://promisegroup.com/" class="header-logo-link">
+                <img src="https://assets-eur.mkt.dynamics.com/0f0df1a6-2f4d-47d5-a0cd-1db1ee224907/digitalassets/images/5021139f-cad7-ee11-904c-6045bddf4538?ts=638448943863360353"
+                    alt="APN Promise" class="header-logo-img">
+            </a>
+            <div class="header-social-container">
+                <a href="https://promisegroup.com/" class="header-social-link" aria-label="Website">
+                    <svg class="header-social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path
+                            d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                        </path>
+                        <path d="M2 12h20"></path>
+                    </svg>
+                </a>
+                <a href="https://www.facebook.com/apnpromise" class="header-social-link" aria-label="Facebook">
+                    <svg class="header-social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/company/" class="header-social-link" aria-label="LinkedIn">
+                    <svg class="header-social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <form class="marketingForm">
+        <div data-layout="true" data-layout-version="v2" style="max-width: 1200px; margin: auto;"
+            data-layout-width="1200px">
+            <div class="notification-container">
+                <div class="notification-message notification-message-hide" data-notification-name="eventNotStarted">
+                    <div>This event has not started.</div>
+                </div>
+                <div class="notification-message notification-message-hide" data-notification-name="eventAtCapacity">
+                    <div>This event is fully booked</div>
+                </div>
+                <div class="notification-message notification-message-hide" data-notification-name="eventEnded">
+                    <div>This event has ended.</div>
+                </div>
+                <div class="notification-message notification-message-hide"
+                    data-notification-name="sessionsFullyBookedEventHasCapacity">
+                    <div>All sessions are fully booked but you can still register for the event.</div>
+                </div>
+            </div>
+
+            <div data-section="true" class="emptyContainer columns-equal-class wrap-section">
+                <table class="outer" align="center" cellpadding="0" cellspacing="0"
+                    style="width: 1200px; display: block;">
+                    <tbody>
+                        <tr>
+                            <th style="">
+                                <table style="width: 100%;
+                border-collapse: collapse;" class="containerWrapper tbContainer" cellpadding="0" cellspacing="0">
+                                    <tbody>
+                                        <tr>
+                                            <th data-container="true" class="columnContainer" data-container-width="100"
+                                                style="vertical-align: top; min-width: 5px; width: 1200px; height: 0px;"
+                                                id="container5d76dcf46b3b1774960379357">
+                                                <table width="100%" cellpadding="0" cellspacing="0"
+                                                    style="height: 100%;">
+                                                    <tbody>
+                                                        <tr>
+                                                            <th class="inner"
+                                                                style="min-width: 5px; vertical-align: top; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word; background-color: rgba(0, 0, 0, 0); font-weight: normal;">
+                                                                <div data-editorblocktype="Image" style="">
+                                                                    <div align="Center" class="imageWrapper" style=""
+                                                                        data-image-file-id="cb76eaee-befe-ed11-8f6e-0022489b4808">
+                                                                        <img src="https://assets-eur.mkt.dynamics.com/0f0df1a6-2f4d-47d5-a0cd-1db1ee224907/digitalassets/images/cb76eaee-befe-ed11-8f6e-0022489b4808?ts=638210299606439297"
+                                                                            style="max-height: 100%; max-width: 100%; box-sizing: border-box; display: block; border-radius: 20px;">
+                                                                    </div>
+                                                                </div>
+                                                            </th>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </th>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div data-section="true" class="columns-equal-class wrap-section" style="margin: 0px; border-radius: 0px;">
+                <table class="outer" align="center" cellpadding="0" cellspacing="0"
+                    style="border-collapse: collapse; width: 1200px; display: block;">
+                    <tbody>
+                        <tr>
+                            <th
+                                style="border-color: rgb(0, 0, 0); border-style: none; padding-top: 20px; padding-bottom: 20px; border-radius: 0px;">
+                                <table style="width: 100%;
+                border-collapse: collapse;" class="containerWrapper tbContainer multi" cellpadding="0" cellspacing="0">
+                                    <tbody>
+                                        <tr>
+                                            <th data-container="true" class="columnContainer"
+                                                data-container-width="60.00"
+                                                style="vertical-align: top; min-width: 5px; width: 720px; height: 0px; padding: 0px;"
+                                                id="container678d4908143791739789347162">
+                                                <table width="100%" cellpadding="0" cellspacing="0"
+                                                    style="border-collapse: collapse; height: 100%;">
+                                                    <tbody>
+                                                        <tr>
+                                                            <th class="inner ui-sortable"
+                                                                style="min-width: 5px; padding-right: 10px; vertical-align: top; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word; background-color: rgba(0, 0, 0, 0); border-color: rgb(0, 0, 0); border-style: none; border-radius: 0px; padding-bottom: 20px; padding-left: 10px; font-weight: normal;">
+
+
+                                                                <div data-editorblocktype="Text" style="margin: 10px;">
+                                                                    <p><span
+                                                                            style="font-family: Roboto, Helvetica, sans-serif; font-weight: bold; font-size: 20px;">📅</span><span
+                                                                            style="font-family:Roboto, Helvetica, sans-serif; font-size:24px; font-weight:bold">&nbsp;</span><span
+                                                                            style="font-size: 14px; color: rgb(127, 127, 127);">Month
+                                                                            Day, Year&nbsp; •&nbsp; 10:00</span><br>
+                                                                    </p>
+                                                                </div>
+                                                                <div data-editorblocktype="Divider"
+                                                                    style="margin: 10px;">
+                                                                    <div class="dividerWrapper" align="center">
+                                                                        <table
+                                                                            style="padding: 0px; margin: 0px; width: 100%; border-collapse: collapse;"
+                                                                            role="presentation" class="" cellpadding="0"
+                                                                            cellspacing="0">
+                                                                            <tbody>
+                                                                                <tr style="padding: 0px;">
+                                                                                    <th
+                                                                                        style="margin: 0px; padding: 0px; vertical-align: top; border-top: 1px solid rgb(228, 234, 242);">
+                                                                                        <p
+                                                                                            style="margin: 0px; padding: 0px; line-height: 0px; width: 100%;">
+                                                                                            <span><!--[if gte mso 9]><br/><![endif]-->&nbsp;</span>
+                                                                                        </p>
+                                                                                    </th>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                                <div data-editorblocktype="Text" style="margin: 10px;">
+                                                                    <p><span
+                                                                            style="font-weight: bold; font-size: 24px; color: rgb(64, 64, 64);">The
+                                                                            standard Lorem Ipsum passage, used
+                                                                            since</span>
+                                                                    </p>
+                                                                </div>
+                                                                <div data-editorblocktype="Text" style="margin: 10px;">
+                                                                    <p><span
+                                                                            style="background-color:rgba(0, 0, 0, 0); text-align:justify; font-size:11pt; color:rgb(64, 64, 64)"><span
+                                                                                lang="RU">Lorem ipsum dolor sit amet,
+                                                                                consectetur adipiscing elit, sed do
+                                                                                eiusmod tempor incididunt ut labore et
+                                                                                dolore magna aliqua. Ut enim ad minim
+                                                                                veniam, quis nostrud exercitation
+                                                                                ullamco laboris nisi ut aliquip ex ea
+                                                                                commodo
+                                                                                consequat.&nbsp;</span></span><span
+                                                                            style="background-color: rgba(0, 0, 0, 0); text-align: justify; color: rgb(64, 64, 64);">Ut
+                                                                            enim ad minima veniam, quis nostrum
+                                                                            exercitationem ullam corporis suscipit
+                                                                            laboriosam, nisi ut aliquid ex ea commodi
+                                                                            consequatur? Quis autem vel eum iure
+                                                                            reprehenderit qui in ea voluptate velit esse
+                                                                            quam nihil molestiae consequatur, vel illum
+                                                                            qui
+                                                                            dolorem eum fugiat quo voluptas nulla
+                                                                            pariatur?</span>
+                                                                    </p>
+                                                                    <p><span
+                                                                            style="background-color: rgba(0, 0, 0, 0); text-align: justify; color: rgb(64, 64, 64);"><br></span>
+                                                                    </p>
+                                                                    <p><span
+                                                                            style="background-color: rgba(0, 0, 0, 0); text-align: justify; color: rgb(64, 64, 64);"><br></span>
+                                                                    </p>
+                                                                    <p>
+                                                                    </p>
+                                                                    <p>
+                                                                    </p>
+                                                                    <p>
+                                                                    </p>
+                                                                    <p><span
+                                                                            style="font-size:16px; font-family:Aptos, sans-serif; font-weight:bold; color:rgb(64, 64, 64)"><span
+                                                                                lang="EN-US">Duis aute irure
+                                                                                dolor</span></span>
+                                                                    </p>
+                                                                    <ul>
+                                                                        <li><span
+                                                                                style="line-height:1.5; font-size:11pt; font-family:Aptos, sans-serif; color:rgb(64, 64, 64)"><span
+                                                                                    lang="EN-US">Lorem ipsum dolor sit
+                                                                                    amet, consectetur adipiscing
+                                                                                    elit&nbsp;</span></span>
+                                                                        </li>
+                                                                        <li><span
+                                                                                style="line-height:1.5; font-size:11pt; font-family:Mulish, sans-serif; color:rgb(64, 64, 64)"><span
+                                                                                    lang="EN-US">Lorem ipsum dolor sit
+                                                                                    amet, consectetur adipiscing
+                                                                                    elit</span></span>
+                                                                        </li>
+                                                                        <li><span
+                                                                                style="line-height:1.5; font-size:11pt; font-family:Mulish, sans-serif; color:rgb(64, 64, 64)"><span
+                                                                                    lang="EN-US">Lorem ipsum dolor sit
+                                                                                    amet, consectetur adipiscing
+                                                                                    elit</span></span>
+                                                                        </li>
+                                                                    </ul>
+                                                                    <p>
+                                                                    </p>
+                                                                    <p><span
+                                                                            style="font-size:16px; font-family:Mulish, sans-serif; font-weight:bold; color:rgb(64, 64, 64)"><span
+                                                                                lang="RU">Duis aute irure
+                                                                                dolor?</span></span>
+                                                                    </p>
+                                                                    <ul>
+                                                                        <li><span
+                                                                                style="line-height:1.5; font-size:11pt; font-family:Mulish, sans-serif; color:rgb(64, 64, 64)"><span
+                                                                                    lang="RU">Sed ut perspiciatis unde
+                                                                                    omnis iste natus</span></span>
+                                                                        </li>
+                                                                        <li><span
+                                                                                style="line-height:1.5; font-size:11pt; font-family:Mulish, sans-serif; color:rgb(64, 64, 64)"><span
+                                                                                    lang="RU">Sed ut perspiciatis unde
+                                                                                    omnis iste natus</span></span>
+                                                                        </li>
+                                                                        <li><span
+                                                                                style="line-height:1.5; font-size:11pt; font-family:Mulish, sans-serif; color:rgb(64, 64, 64)"><span
+                                                                                    lang="RU">Sed ut perspiciatis unde
+                                                                                    omnis iste natus</span></span>
+                                                                        </li>
+                                                                    </ul>
+                                                                    <ol>
+                                                                    </ol>
+                                                                </div>
+
+                                                                <div data-editorblocktype="Text"
+                                                                    style="width: 100%; margin: 10px 0;">
+                                                                    <div class="agenda-table-wrapper">
+                                                                        <table class="modern-agenda-table">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th class="agenda-col-time">Czas
+                                                                                    </th>
+                                                                                    <th>Temat sesji</th>
+                                                                                    <th class="agenda-col-speaker">
+                                                                                        Prowadzący</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <!-- Wiersz 1 -->
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <span
+                                                                                            style="font-size: 14px; font-weight: 600; color: #0f172a;">10:00
+                                                                                            - 10:45</span>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <div
+                                                                                            style="font-size: 15px; font-weight: 600; color: #0f172a; line-height: 1.3; margin-bottom: 4px;">
+                                                                                            Otwarcie konferencji i
+                                                                                            powitanie gości</div>
+                                                                                        <div
+                                                                                            style="font-size: 13px; color: #64748b; line-height: 1.4;">
+                                                                                            Krótkie wprowadzenie do
+                                                                                            tematyki wydarzenia oraz
+                                                                                            omówienie najważniejszych
+                                                                                            trendów w branży IT.</div>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <div
+                                                                                            style="font-size: 14px; font-weight: 500; color: #0f172a;">
+                                                                                            Marcus Wright</div>
+                                                                                        <div
+                                                                                            style="font-size: 12px; color: #94a3b8;">
+                                                                                            CEO, APN Promise</div>
+                                                                                    </td>
+                                                                                </tr>
+
+                                                                                <!-- Wiersz 2 -->
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <span
+                                                                                            style="font-size: 14px; font-weight: 600; color: #0f172a;">10:45
+                                                                                            - 11:30</span>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <div
+                                                                                            style="font-size: 15px; font-weight: 600; color: #0f172a; line-height: 1.3; margin-bottom: 4px;">
+                                                                                            Przyszłość infrastruktury
+                                                                                            chmurowej</div>
+                                                                                        <div
+                                                                                            style="font-size: 13px; color: #64748b; line-height: 1.4;">
+                                                                                            Jak skalować aplikacje i
+                                                                                            optymalizować koszty w
+                                                                                            nowoczesnych środowiskach
+                                                                                            Cloud Native.</div>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <div
+                                                                                            style="font-size: 14px; font-weight: 500; color: #0f172a;">
+                                                                                            Sarah Chen</div>
+                                                                                        <div
+                                                                                            style="font-size: 12px; color: #94a3b8;">
+                                                                                            VP of Engineering, Vercel
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+
+                                                                                <!-- Wiersz 3 -->
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <span
+                                                                                            style="font-size: 14px; font-weight: 600; color: #0f172a;">11:30
+                                                                                            - 11:45</span>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <div
+                                                                                            style="font-size: 14px; font-weight: 600; color: #64748b; line-height: 1.3; font-style: italic;">
+                                                                                            Przerwa kawowa / Networking
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <span
+                                                                                            style="font-size: 14px; color: #cbd5e1;">—</span>
+                                                                                    </td>
+                                                                                </tr>
+
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+
+
+
+                                                                <div data-editorblocktype="Divider"
+                                                                    style="margin: 100px 10px 10px;">
+                                                                    <div class="dividerWrapper" align="center">
+                                                                        <table
+                                                                            style="padding: 0px; margin: 0px; width: 100%; border-collapse: collapse;"
+                                                                            role="presentation" class="" cellpadding="0"
+                                                                            cellspacing="0">
+                                                                            <tbody>
+                                                                                <tr style="padding: 0px;">
+                                                                                    <th
+                                                                                        style="margin: 0px; padding: 0px; vertical-align: top; border-top: 1px solid rgb(228, 234, 242);">
+                                                                                        <p
+                                                                                            style="margin: 0px; padding: 0px; line-height: 0px; width: 100%;">
+                                                                                            <span><!--[if gte mso 9]><br/><![endif]-->&nbsp;</span>
+                                                                                        </p>
+                                                                                    </th>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                                <div data-editorblocktype="Text" style="margin: 10px;">
+                                                                    <p><span
+                                                                            style="font-weight: bold; font-size: 16px;">Prowadzący</span>
+                                                                    </p>
+                                                                </div>
+
+                                                                <div class="speakers-grid-container">
+
+                                                                    <!-- Speaker 1 -->
+                                                                    <div class="speaker-card-item">
+                                                                        <div data-editorblocktype="Image"
+                                                                            class="speaker-img-container">
+                                                                            <div align="Center" class="imageWrapper">
+                                                                                <img src="https://i.pravatar.cc/150?img=68"
+                                                                                    alt="Marcus Wright"
+                                                                                    style="width: 48px; height: 48px; border-radius: 50%; object-fit: cover; border: 1px solid rgba(15, 23, 42, 0.1); max-height: 100%; max-width: 100%; box-sizing: border-box; display: block;">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="speaker-text-container">
+                                                                            <div data-editorblocktype="Text"
+                                                                                style="margin: 0; padding: 0;">
+                                                                                <p class="speaker-text-truncate"
+                                                                                    style="margin: 0; line-height: 1.2;">
+                                                                                    <span
+                                                                                        style="font-size: 14px; font-weight: 500; color: #0f172a; font-family: 'Mulish', sans-serif;">Marcus
+                                                                                        Wright</span>
+                                                                                </p>
+                                                                            </div>
+                                                                            <div data-editorblocktype="Text"
+                                                                                style="margin: 2px 0 0 0; padding: 0;">
+                                                                                <p class="speaker-text-truncate"
+                                                                                    style="margin: 0; line-height: 1.2;">
+                                                                                    <span
+                                                                                        style="font-size: 12px; color: #64748b; font-family: 'Mulish', sans-serif;">Lead
+                                                                                        Systems Architect</span>
+                                                                                </p>
+                                                                            </div>
+                                                                            <div data-editorblocktype="Text"
+                                                                                style="margin: 4px 0 0 0; padding: 0;">
+                                                                                <p class="speaker-text-truncate"
+                                                                                    style="margin: 0; line-height: 1.2;">
+                                                                                    <span
+                                                                                        style="font-size: 10px; font-weight: 600; text-transform: uppercase; color: #94a3b8; font-family: 'Mulish', sans-serif;">APN
+                                                                                        Promise</span>
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <!-- Speaker 2 -->
+                                                                    <div class="speaker-card-item">
+                                                                        <div data-editorblocktype="Image"
+                                                                            class="speaker-img-container">
+                                                                            <div align="Center" class="imageWrapper">
+                                                                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80"
+                                                                                    alt="Sarah Chen"
+                                                                                    style="width: 48px; height: 48px; border-radius: 50%; object-fit: cover; border: 1px solid rgba(15, 23, 42, 0.1); max-height: 100%; max-width: 100%; box-sizing: border-box; display: block;">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="speaker-text-container">
+                                                                            <div data-editorblocktype="Text"
+                                                                                style="margin: 0; padding: 0;">
+                                                                                <p class="speaker-text-truncate"
+                                                                                    style="margin: 0; line-height: 1.2;">
+                                                                                    <span
+                                                                                        style="font-size: 14px; font-weight: 500; color: #0f172a; font-family: 'Mulish', sans-serif;">Sarah
+                                                                                        Chen</span>
+                                                                                </p>
+                                                                            </div>
+                                                                            <div data-editorblocktype="Text"
+                                                                                style="margin: 2px 0 0 0; padding: 0;">
+                                                                                <p class="speaker-text-truncate"
+                                                                                    style="margin: 0; line-height: 1.2;">
+                                                                                    <span
+                                                                                        style="font-size: 12px; color: #64748b; font-family: 'Mulish', sans-serif;">VP
+                                                                                        of Engineering</span>
+                                                                                </p>
+                                                                            </div>
+                                                                            <div data-editorblocktype="Text"
+                                                                                style="margin: 4px 0 0 0; padding: 0;">
+                                                                                <p class="speaker-text-truncate"
+                                                                                    style="margin: 0; line-height: 1.2;">
+                                                                                    <span
+                                                                                        style="font-size: 10px; font-weight: 600; text-transform: uppercase; color: #94a3b8; font-family: 'Mulish', sans-serif;">Vercel</span>
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <!-- Speaker 3 -->
+                                                                    <div class="speaker-card-item">
+                                                                        <div data-editorblocktype="Image"
+                                                                            class="speaker-img-container">
+                                                                            <div align="Center" class="imageWrapper">
+                                                                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80"
+                                                                                    alt="David Park"
+                                                                                    style="width: 48px; height: 48px; border-radius: 50%; object-fit: cover; border: 1px solid rgba(15, 23, 42, 0.1); max-height: 100%; max-width: 100%; box-sizing: border-box; display: block;">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="speaker-text-container">
+                                                                            <div data-editorblocktype="Text"
+                                                                                style="margin: 0; padding: 0;">
+                                                                                <p class="speaker-text-truncate"
+                                                                                    style="margin: 0; line-height: 1.2;">
+                                                                                    <span
+                                                                                        style="font-size: 14px; font-weight: 500; color: #0f172a; font-family: 'Mulish', sans-serif;">David
+                                                                                        Park</span>
+                                                                                </p>
+                                                                            </div>
+                                                                            <div data-editorblocktype="Text"
+                                                                                style="margin: 2px 0 0 0; padding: 0;">
+                                                                                <p class="speaker-text-truncate"
+                                                                                    style="margin: 0; line-height: 1.2;">
+                                                                                    <span
+                                                                                        style="font-size: 12px; color: #64748b; font-family: 'Mulish', sans-serif;">Principal
+                                                                                        Engineer</span>
+                                                                                </p>
+                                                                            </div>
+                                                                            <div data-editorblocktype="Text"
+                                                                                style="margin: 4px 0 0 0; padding: 0;">
+                                                                                <p class="speaker-text-truncate"
+                                                                                    style="margin: 0; line-height: 1.2;">
+                                                                                    <span
+                                                                                        style="font-size: 10px; font-weight: 600; text-transform: uppercase; color: #94a3b8; font-family: 'Mulish', sans-serif;">Stripe</span>
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <!-- Speaker 4 -->
+                                                                    <div class="speaker-card-item">
+                                                                        <div data-editorblocktype="Image"
+                                                                            class="speaker-img-container">
+                                                                            <div align="Center" class="imageWrapper">
+                                                                                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80"
+                                                                                    alt="Elena Rodriguez"
+                                                                                    style="width: 48px; height: 48px; border-radius: 50%; object-fit: cover; border: 1px solid rgba(15, 23, 42, 0.1); max-height: 100%; max-width: 100%; box-sizing: border-box; display: block;">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="speaker-text-container">
+                                                                            <div data-editorblocktype="Text"
+                                                                                style="margin: 0; padding: 0;">
+                                                                                <p class="speaker-text-truncate"
+                                                                                    style="margin: 0; line-height: 1.2;">
+                                                                                    <span
+                                                                                        style="font-size: 14px; font-weight: 500; color: #0f172a; font-family: 'Mulish', sans-serif;">Elena
+                                                                                        Rodriguez</span>
+                                                                                </p>
+                                                                            </div>
+                                                                            <div data-editorblocktype="Text"
+                                                                                style="margin: 2px 0 0 0; padding: 0;">
+                                                                                <p class="speaker-text-truncate"
+                                                                                    style="margin: 0; line-height: 1.2;">
+                                                                                    <span
+                                                                                        style="font-size: 12px; color: #64748b; font-family: 'Mulish', sans-serif;">Head
+                                                                                        of Product</span>
+                                                                                </p>
+                                                                            </div>
+                                                                            <div data-editorblocktype="Text"
+                                                                                style="margin: 4px 0 0 0; padding: 0;">
+                                                                                <p class="speaker-text-truncate"
+                                                                                    style="margin: 0; line-height: 1.2;">
+                                                                                    <span
+                                                                                        style="font-size: 10px; font-weight: 600; text-transform: uppercase; color: #94a3b8; font-family: 'Mulish', sans-serif;">Linear</span>
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <!-- Speaker 5 -->
+                                                                    <div class="speaker-card-item">
+                                                                        <div data-editorblocktype="Image"
+                                                                            class="speaker-img-container">
+                                                                            <div align="Center" class="imageWrapper">
+                                                                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80"
+                                                                                    alt="James Wilson"
+                                                                                    style="width: 48px; height: 48px; border-radius: 50%; object-fit: cover; border: 1px solid rgba(15, 23, 42, 0.1); max-height: 100%; max-width: 100%; box-sizing: border-box; display: block;">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="speaker-text-container">
+                                                                            <div data-editorblocktype="Text"
+                                                                                style="margin: 0; padding: 0;">
+                                                                                <p class="speaker-text-truncate"
+                                                                                    style="margin: 0; line-height: 1.2;">
+                                                                                    <span
+                                                                                        style="font-size: 14px; font-weight: 500; color: #0f172a; font-family: 'Mulish', sans-serif;">James
+                                                                                        Wilson</span>
+                                                                                </p>
+                                                                            </div>
+                                                                            <div data-editorblocktype="Text"
+                                                                                style="margin: 2px 0 0 0; padding: 0;">
+                                                                                <p class="speaker-text-truncate"
+                                                                                    style="margin: 0; line-height: 1.2;">
+                                                                                    <span
+                                                                                        style="font-size: 12px; color: #64748b; font-family: 'Mulish', sans-serif;">Cloud
+                                                                                        Infrastructure</span>
+                                                                                </p>
+                                                                            </div>
+                                                                            <div data-editorblocktype="Text"
+                                                                                style="margin: 4px 0 0 0; padding: 0;">
+                                                                                <p class="speaker-text-truncate"
+                                                                                    style="margin: 0; line-height: 1.2;">
+                                                                                    <span
+                                                                                        style="font-size: 10px; font-weight: 600; text-transform: uppercase; color: #94a3b8; font-family: 'Mulish', sans-serif;">AWS</span>
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <!-- Speaker 6 -->
+                                                                    <div class="speaker-card-item">
+                                                                        <div data-editorblocktype="Image"
+                                                                            class="speaker-img-container">
+                                                                            <div align="Center" class="imageWrapper">
+                                                                                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80"
+                                                                                    alt="Anna Kowalski"
+                                                                                    style="width: 48px; height: 48px; border-radius: 50%; object-fit: cover; border: 1px solid rgba(15, 23, 42, 0.1); max-height: 100%; max-width: 100%; box-sizing: border-box; display: block;">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="speaker-text-container">
+                                                                            <div data-editorblocktype="Text"
+                                                                                style="margin: 0; padding: 0;">
+                                                                                <p class="speaker-text-truncate"
+                                                                                    style="margin: 0; line-height: 1.2;">
+                                                                                    <span
+                                                                                        style="font-size: 14px; font-weight: 500; color: #0f172a; font-family: 'Mulish', sans-serif;">Anna
+                                                                                        Kowalski</span>
+                                                                                </p>
+                                                                            </div>
+                                                                            <div data-editorblocktype="Text"
+                                                                                style="margin: 2px 0 0 0; padding: 0;">
+                                                                                <p class="speaker-text-truncate"
+                                                                                    style="margin: 0; line-height: 1.2;">
+                                                                                    <span
+                                                                                        style="font-size: 12px; color: #64748b; font-family: 'Mulish', sans-serif;">Security
+                                                                                        Engineer</span>
+                                                                                </p>
+                                                                            </div>
+                                                                            <div data-editorblocktype="Text"
+                                                                                style="margin: 4px 0 0 0; padding: 0;">
+                                                                                <p class="speaker-text-truncate"
+                                                                                    style="margin: 0; line-height: 1.2;">
+                                                                                    <span
+                                                                                        style="font-size: 10px; font-weight: 600; text-transform: uppercase; color: #94a3b8; font-family: 'Mulish', sans-serif;">Tailwind
+                                                                                        Labs</span>
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+
+
+
+                                                            </th>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </th>
+                                            <th data-container="true" class="columnContainer"
+                                                data-container-width="40.00"
+                                                style="vertical-align: top; min-width: 5px; width: 480px; padding: 0px; height: 0px; box-shadow: rgb(228, 234, 242) 0px 0px 26px; border-radius: 20px;"
+                                                id="container47cf7d0dcb9f71739789886879">
+                                                <table width="100%" cellpadding="0" cellspacing="0"
+                                                    style="height: 100%;">
+                                                    <tbody>
+                                                        <tr>
+                                                            <th class="columnContainer inner"
+                                                                style="padding: 24px 14px 14px; min-width: 5px; vertical-align: top; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word; background-color: rgb(255, 255, 255); border-color: rgb(216, 223, 236); border-style: solid; border-radius: 20px; border-width: 1px; font-weight: normal;">
+
+
+
+
+
+
+
+
+                                                                <div data-editorblocktype="Text" style="margin: 10px;">
+                                                                    <p><span
+                                                                            style="font-size: 18px; font-weight: bold;">Zarejestruj
+                                                                            się</span>
+                                                                    </p>
+                                                                </div>
+                                                                <div data-editorblocktype="Text" style="margin: 10px;">
+                                                                    <p><span style="color: rgb(127, 127, 127);">Wypełnij
+                                                                            poniższe dane, aby potwierdzić
+                                                                            obecność.</span>
+                                                                    </p>
+                                                                </div>
+
+                                                                <div class="form-row-grid">
+                                                                    <div class="textFormFieldBlock"
+                                                                        data-editorblocktype="TextFormField"
+                                                                        data-targetaudience="lead&amp;contact"
+                                                                        data-targetproperty="firstname"
+                                                                        data-required="required" data-prefill="false">
+                                                                        <label title="First Name"
+                                                                            for="firstname-1774957292555">Imię</label>
+                                                                        <input id="firstname-1774957292555" type="text"
+                                                                            name="firstname" placeholder="Jan"
+                                                                            title="First Name" maxlength="50"
+                                                                            required="required">
+                                                                    </div>
+                                                                    <div class="textFormFieldBlock"
+                                                                        data-editorblocktype="TextFormField"
+                                                                        data-targetaudience="lead&amp;contact"
+                                                                        data-targetproperty="lastname"
+                                                                        data-required="required" data-prefill="false">
+                                                                        <label title="Last Name"
+                                                                            for="lastname-1774957301378">Nazwisko</label>
+                                                                        <input id="lastname-1774957301378" type="text"
+                                                                            name="lastname" placeholder="Kowalski"
+                                                                            title="Last Name" maxlength="50"
+                                                                            required="required">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="textFormFieldBlock"
+                                                                    data-editorblocktype="TextFormField"
+                                                                    data-targetaudience="lead&amp;contact"
+                                                                    data-targetproperty="emailaddress1"
+                                                                    data-prefill="false" data-required="required">
+                                                                    <label title="Email"
+                                                                        for="emailaddress1-1774957318730">Służbowy
+                                                                        email</label><input
+                                                                        id="emailaddress1-1774957318730" type="email"
+                                                                        name="emailaddress1"
+                                                                        placeholder="jan.kowalski@firma.pl"
+                                                                        title="Email"
+                                                                        pattern="[^@\s\\&quot;&lt;&gt;\)\(\[\]:;,.]+(([.]{1}[^@\s\\&quot;&lt;&gt;\)\(\[\]:;,.]+)+?|)@([^@\s\\&quot;&lt;&gt;\)\(\[\]\+:;,\.\-]+(((\.|\+|-|--)[^@\s\\&quot;&lt;&gt;\)\(\[\]+:;,.\-]+)+?|)([.][^0-9@\s\\&quot;&lt;&gt;\)\(\[\]+:;,.\-]+)+?)"
+                                                                        required="required">
+                                                                </div>
+                                                                <div class="phoneFormFieldBlock"
+                                                                    data-editorblocktype="PhoneFormField"
+                                                                    data-targetaudience="lead&amp;contact"
+                                                                    data-targetproperty="telephone1"
+                                                                    data-countrycode="+48" data-prefill="false"
+                                                                    data-required="required">
+                                                                    <label title="Business Phone"
+                                                                        for="telephone1-1774957324948">Telefon
+                                                                        służbowy</label>
+                                                                    <div class="phoneCountryCode">
+                                                                        <span
+                                                                            class="phoneCountryCodeLabel">+48</span><input
+                                                                            id="telephone1-1774957324948" type="tel"
+                                                                            name="telephone1" placeholder="123 456 789"
+                                                                            title="Business Phone"
+                                                                            pattern="(\+[\(]?[0-9]{1,4}|[\(]?00[0-9]{0,2}|[\(]?011[0-9]?|[\(]?010[0-9]?)[\)]?([ \-\(\)]*[0-9][ \-\(\)]*){3,16}|([ \-\(\)]*[0-9][ \-\(\)]*){3,16}"
+                                                                            required="required" value="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="textFormFieldBlock"
+                                                                    data-editorblocktype="TextFormField"
+                                                                    data-targetaudience="lead&amp;contact"
+                                                                    data-targetproperty="apn_companyname"
+                                                                    data-prefill="false" data-required="required">
+                                                                    <label title="Company Name"
+                                                                        for="apn_companyname-1774957337220">Nazwa
+                                                                        firmy</label><input
+                                                                        id="apn_companyname-1774957337220" type="text"
+                                                                        name="apn_companyname"
+                                                                        placeholder="Firma Sp. z o.o."
+                                                                        title="Company Name" maxlength="100"
+                                                                        required="required">
+                                                                </div>
+
+                                                                <div class="form-row-grid">
+                                                                    <div class="textFormFieldBlock"
+                                                                        data-editorblocktype="TextFormField"
+                                                                        data-targetaudience="lead&amp;contact"
+                                                                        data-targetproperty="jobtitle"
+                                                                        data-prefill="false" data-required="required">
+                                                                        <label title="Job Title"
+                                                                            for="jobtitle-1774957344950">Stanowisko</label>
+                                                                        <input id="jobtitle-1774957344950" type="text"
+                                                                            name="jobtitle" placeholder="np. IT Manager"
+                                                                            title="Job Title" maxlength="1000"
+                                                                            required="required">
+                                                                    </div>
+                                                                    <div class="optionSetFormFieldBlock"
+                                                                        data-editorblocktype="OptionSetFormField"
+                                                                        data-targetaudience="lead&amp;contact"
+                                                                        data-targetproperty="ntw_industry"
+                                                                        data-prefill="false" data-required="required">
+                                                                        <label title="Industry" class="block-label"
+                                                                            for="ntw_industry-1774957363177">Branża</label>
+                                                                        <select id="ntw_industry-1774957363177"
+                                                                            name="ntw_industry" title="Industry"
+                                                                            required="">
+                                                                            <option value="" hidden="">Wybierz branżę...
+                                                                            </option>
+                                                                            <option
+                                                                                id="ntw_industry-1774957363177-961110006"
+                                                                                value="961110006">Agriculture &amp; Food
+                                                                            </option>
+                                                                            <option
+                                                                                id="ntw_industry-1774957363177-556310000"
+                                                                                value="556310000">Automotive</option>
+                                                                            <option
+                                                                                id="ntw_industry-1774957363177-961110000"
+                                                                                value="961110000">Banking &amp; Finance
+                                                                            </option>
+                                                                            <option
+                                                                                id="ntw_industry-1774957363177-556310004"
+                                                                                value="556310004">Consumer Goods
+                                                                            </option>
+                                                                            <option
+                                                                                id="ntw_industry-1774957363177-961110001"
+                                                                                value="961110001">Education</option>
+                                                                            <option
+                                                                                id="ntw_industry-1774957363177-961110002"
+                                                                                value="961110002">Energy &amp; Resource
+                                                                            </option>
+                                                                            <option
+                                                                                id="ntw_industry-1774957363177-961110007"
+                                                                                value="961110007">Healthcare</option>
+                                                                            <option
+                                                                                id="ntw_industry-1774957363177-921150000"
+                                                                                value="921150000">Hospitality &amp;
+                                                                                Entertainment</option>
+                                                                            <option
+                                                                                id="ntw_industry-1774957363177-556310001"
+                                                                                value="556310001">Insurance</option>
+                                                                            <option
+                                                                                id="ntw_industry-1774957363177-961110004"
+                                                                                value="961110004">IT</option>
+                                                                            <option
+                                                                                id="ntw_industry-1774957363177-921150002"
+                                                                                value="921150002">Logistics &amp;
+                                                                                Transport</option>
+                                                                            <option
+                                                                                id="ntw_industry-1774957363177-556310003"
+                                                                                value="556310003">Media &amp;
+                                                                                Entertainment</option>
+                                                                            <option
+                                                                                id="ntw_industry-1774957363177-921150001"
+                                                                                value="921150001">Micro Enterprises
+                                                                            </option>
+                                                                            <option
+                                                                                id="ntw_industry-1774957363177-556310002"
+                                                                                value="556310002">Nonprofit</option>
+                                                                            <option
+                                                                                id="ntw_industry-1774957363177-921150008"
+                                                                                value="921150008">Production</option>
+                                                                            <option
+                                                                                id="ntw_industry-1774957363177-961110003"
+                                                                                value="961110003">Public Critical
+                                                                                Infrastructure</option>
+                                                                            <option
+                                                                                id="ntw_industry-1774957363177-556310005"
+                                                                                value="556310005">Public Finance
+                                                                            </option>
+                                                                            <option
+                                                                                id="ntw_industry-1774957363177-556310006"
+                                                                                value="556310006">Public Safety &amp;
+                                                                                Justice</option>
+                                                                            <option
+                                                                                id="ntw_industry-1774957363177-921150005"
+                                                                                value="921150005">Real Estate</option>
+                                                                            <option
+                                                                                id="ntw_industry-1774957363177-921150007"
+                                                                                value="921150007">Retail</option>
+                                                                            <option
+                                                                                id="ntw_industry-1774957363177-921150004"
+                                                                                value="921150004">Services</option>
+                                                                            <option
+                                                                                id="ntw_industry-1774957363177-921150003"
+                                                                                value="921150003">Telco</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="optionSetFormFieldBlock"
+                                                                    data-editorblocktype="OptionSetFormField"
+                                                                    data-targetaudience="lead&amp;contact"
+                                                                    data-targetproperty="apn_participatingreason"
+                                                                    data-prefill="false" data-required="required">
+                                                                    <label title="Participating Reason"
+                                                                        class="block-label"
+                                                                        for="apn_participatingreason-1774957371117">Cel
+                                                                        udziału</label><select
+                                                                        id="apn_participatingreason-1774957371117"
+                                                                        name="apn_participatingreason"
+                                                                        title="Participating Reason" required="">
+                                                                        <option value="" hidden="">Chcę wziąć udział,
+                                                                            ponieważ...</option>
+                                                                        <option
+                                                                            id="apn_participatingreason-1774957371117-921150000"
+                                                                            value="921150000">I am considering
+                                                                            purchasing this type of solution.</option>
+                                                                        <option
+                                                                            id="apn_participatingreason-1774957371117-921150001"
+                                                                            value="921150001">I am looking for a
+                                                                            solution to a business problem.</option>
+                                                                        <option
+                                                                            id="apn_participatingreason-1774957371117-921150002"
+                                                                            value="921150002">I am expanding my
+                                                                            knowledge in this area.</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="consentBlock" data-editorblocktype="Consent"
+                                                                    data-required="false"
+                                                                    style="padding: 20px 20px 10px;"
+                                                                    data-compliancesettingsid="7d8ff845-97de-ed11-a7c6-0022489ae42c"
+                                                                    data-compliancesettingsname="Compliance Settings PL"
+                                                                    data-purposeid="10000000-0000-0000-0000-000000000003"
+                                                                    data-channels="Email,Text"
+                                                                    data-purposename="Commercial"
+                                                                    data-topicid="undefined" data-topicname="undefined"
+                                                                    data-optinwhenchecked="true" data-prefill="false">
+                                                                    <p>
+                                                                        <input type="checkbox"
+                                                                            id="consentCheckbox-1742546593190"
+                                                                            name="msdynmkt_purposeid;channels;optinwhenchecked"
+                                                                            value="10000000-0000-0000-0000-000000000003;Email,Text;true">
+                                                                        <label id="consentCheckbox-1742546593190-label"
+                                                                            for="consentCheckbox-1742546593190"><span
+                                                                                style="color: rgb(50, 49, 48);">&nbsp;<span
+                                                                                    style="color: rgb(50, 49, 48); font-family: Mulish, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke: 0px rgb(50, 49, 48); white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: rgb(50, 49, 48); float: none; border-block-color: rgb(50, 49, 48); border-color: rgb(50, 49, 48); border-inline-color: rgb(50, 49, 48); caret-color: rgb(50, 49, 48); column-rule-color: rgb(50, 49, 48); outline-color: rgb(50, 49, 48); text-emphasis-color: rgb(50, 49, 48); -webkit-locale: auto; -webkit-text-fill-color: rgb(50, 49, 48); display: inline !important; font-size: 14px;">&nbsp;Chcę
+                                                                                    otrzymywać treści marketingowe od
+                                                                                    Promise
+                                                                                    Group.</span>&nbsp;</span></label>
+                                                                    </p>
+                                                                </div>
+                                                                <div data-editorblocktype="SubmitButton"
+                                                                    class="submitButtonWrapper" align="center"
+                                                                    style="text-align: center;"><button
+                                                                        class="submitButton" type="submit"
+                                                                        aria-label="Zarejestruj się"
+                                                                        style="height: auto; width: 100%; vertical-align: middle; background-color: rgb(0, 21, 92); border-radius: 12px;">
+                                                                        <span
+                                                                            style="vertical-align: middle;">Zarejestruj
+                                                                            się</span></button></div>
+
+                                                                <div class="textFormFieldBlock"
+                                                                    data-editorblocktype="TextFormField"
+                                                                    data-targetaudience="lead"
+                                                                    data-targetproperty="apn_utmcampaign"
+                                                                    data-prefill="false" data-hide="hide">
+                                                                    <label title="UTM Campaign"
+                                                                        for="apn_utmcampaign-1739789592685">UTM
+                                                                        Campaign</label><input
+                                                                        id="apn_utmcampaign-1739789592685" type="text"
+                                                                        name="apn_utmcampaign"
+                                                                        placeholder="UTM Campaign" title="UTM Campaign"
+                                                                        maxlength="4000">
+                                                                </div>
+                                                                <div class="textFormFieldBlock"
+                                                                    data-editorblocktype="TextFormField"
+                                                                    data-targetaudience="lead"
+                                                                    data-targetproperty="apn_utmcontent"
+                                                                    data-prefill="false" data-hide="hide">
+                                                                    <label title="UTM Content"
+                                                                        for="apn_utmcontent-1739789596634">UTM
+                                                                        Content</label><input
+                                                                        id="apn_utmcontent-1739789596634" type="text"
+                                                                        name="apn_utmcontent" placeholder="UTM Content"
+                                                                        title="UTM Content" maxlength="4000">
+                                                                </div>
+                                                                <div class="textFormFieldBlock"
+                                                                    data-editorblocktype="TextFormField"
+                                                                    data-targetaudience="lead"
+                                                                    data-targetproperty="apn_utmsource"
+                                                                    data-prefill="false" data-hide="hide">
+                                                                    <label title="UTM Source"
+                                                                        for="apn_utmsource-1739789606766">UTM
+                                                                        Source</label><input
+                                                                        id="apn_utmsource-1739789606766" type="text"
+                                                                        name="apn_utmsource" placeholder="UTM Source"
+                                                                        title="UTM Source" maxlength="4000">
+                                                                </div>
+                                                                <div class="textFormFieldBlock"
+                                                                    data-editorblocktype="TextFormField"
+                                                                    data-targetaudience="lead"
+                                                                    data-targetproperty="apn_utmmedium"
+                                                                    data-prefill="false" data-hide="hide">
+                                                                    <label title="UTM Medium"
+                                                                        for="apn_utmmedium-1739789602113">UTM
+                                                                        Medium</label><input
+                                                                        id="apn_utmmedium-1739789602113" type="text"
+                                                                        name="apn_utmmedium" placeholder="UTM Medium"
+                                                                        title="UTM Medium" maxlength="4000">
+                                                                </div>
+                                                                <div class="textFormFieldBlock"
+                                                                    data-editorblocktype="TextFormField"
+                                                                    data-targetaudience="lead&amp;contact"
+                                                                    data-targetproperty="apn_referrerurl"
+                                                                    data-prefill="false" data-hide="hide">
+                                                                    <label title="Referrer URL"
+                                                                        for="apn_referrerurl-1744373070235">Referrer
+                                                                        URL</label><input
+                                                                        id="apn_referrerurl-1744373070235" type="text"
+                                                                        name="apn_referrerurl"
+                                                                        placeholder="Referrer URL" title="Referrer URL"
+                                                                        maxlength="4000">
+                                                                </div>
+                                                                <div class="textFormFieldBlock"
+                                                                    data-editorblocktype="TextAreaFormField"
+                                                                    data-targetaudience="lead&amp;contact"
+                                                                    data-targetproperty="apn_geolocationdata"
+                                                                    data-prefill="false" data-hide="hide">
+                                                                    <label title="Geolocation Data"
+                                                                        for="apn_geolocationdata-1744373081966">Geolocation
+                                                                        Data<div tabindex="0" id="toolbarnav_null"
+                                                                            aria-label="[Navigate to toolbar]"
+                                                                            role="button"
+                                                                            class="editorAccessibilityButton"></div>
+                                                                        </label><textarea
+                                                                        id="apn_geolocationdata-1744373081966"
+                                                                        name="apn_geolocationdata"
+                                                                        placeholder="Geolocation Data"
+                                                                        title="Geolocation Data" cols="20" rows="5"
+                                                                        maxlength="1048576"></textarea>
+                                                                </div>
+
+
+
+
+
+
+
+                                                            </th>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </th>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div data-section="true" class="columns-equal-class wrap-section"
+                style="border-color: rgb(0, 0, 0); border-width: 0px; border-style: none; margin: 0px; padding: 0px; border-radius: 0px;">
+                <div style="width: 100%; display: block;">
+                    <div style="clear:both;"></div>
+                    <div data-container="true" class="columnContainer" data-container-width="100"
+                        style="display: block; min-width: 5px; width: 1180px; flex-direction: column; padding: 10px; float: left; word-wrap: break-word; word-break: break-word; flex: 0 0 1180px;"
+                        id="container7c432c23302531742811026615">
+
+                        <div data-editorblocktype="Text" style="margin: 10px;">
+                            <p style="line-height: 1.5;">
+                                <span style="font-size: 10px; color: rgb(179, 179, 179);">Zgodnie z przepisami
+                                    Rozporządzenia Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016
+                                    r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w
+                                    sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE
+                                    („RODO”) A.P.N. Promise S.A. jest administratorem danych osobowych gromadzonych za
+                                    pośrednictwem formularza. Dane uczestników będą wykorzystywane w celu rejestracji
+                                    zgłoszenia oraz udziału w wydarzeniu zgodnie z art. 6 ust. 1 lit. b RODO wobec
+                                    zgłoszenia uczestnictwa, w celu prawnie uzasadnionego interesu administratora jakim
+                                    jest przeprowadzenie ankiet i oceny satysfakcji zgodnie z art. 6 ust. 1 lit. f RODO
+                                    lub w przypadku wyrażenia zgody na podstawie art. 6 ust. 1 lit. a RODO w celu
+                                    dostarczenia treści marketingowych środkami komunikacji elektronicznej lub za pomocą
+                                    urządzeń telefonicznych. Wszelkie informacje w zakresie przetwarzania podanych przez
+                                    Ciebie w formularzu danych oraz posiadanych uprawnieniach znajdziesz w
+                                    &nbsp;Polityce Prywatności lub uzyskasz kontaktując się z osobą odpowiedzialną za
+                                    ochronę danych osobowych na &nbsp;iodo@promisegroup.com. Kliknij lub napisz i
+                                    dowiedz się więcej, jeżeli informacje podane powyżej nie są dla Ciebie dostatecznie
+                                    jasne.</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div style="clear:both;"></div>
+                </div>
+            </div>
+            <div data-section="true" class="emptyContainer columns-equal-class wrap-section"
+                style="margin: 0px; border-radius: 0px;">
+                <table class="outer" align="center" cellpadding="0" cellspacing="0"
+                    style="width: 1200px; display: block;">
+                    <tbody>
+                        <tr>
+                            <th
+                                style="padding: 40px 10px 10px; border-color: rgb(0, 0, 0); border-width: 0px; border-style: none; border-radius: 0px;">
+                                <table style="width: 100%;
+                border-collapse: collapse;" class="containerWrapper tbContainer" cellpadding="0" cellspacing="0">
+                                    <tbody>
+                                        <tr>
+                                            <th data-container="true" class="columnContainer" data-container-width="100"
+                                                style="vertical-align: top; min-width: 5px; width: 1180px; height: 0px; padding: 0px;"
+                                                id="container3efe628b7fc631739790359723">
+                                                <table width="100%" cellpadding="0" cellspacing="0"
+                                                    style="height: 100%;">
+                                                    <tbody>
+                                                        <tr>
+                                                            <th class="inner"
+                                                                style="min-width: 5px; padding: 10px; vertical-align: top; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word; background-color: rgba(0, 0, 0, 0); border-color: rgb(0, 0, 0); border-width: 0px; border-style: none; border-radius: 0px; font-weight: normal;">
+                                                                <div data-editorblocktype="Image"
+                                                                    style="margin: 10px; padding: 0px;">
+                                                                    <div align="Center" class="imageWrapper"
+                                                                        data-image-file-id="5021139f-cad7-ee11-904c-6045bddf4538">
+                                                                        <img src="https://assets-eur.mkt.dynamics.com/0f0df1a6-2f4d-47d5-a0cd-1db1ee224907/digitalassets/images/5021139f-cad7-ee11-904c-6045bddf4538?ts=638448943863360353"
+                                                                            style="max-height: 100%; max-width: 100%; box-sizing: border-box; display: block; border-radius: 0px; width: 110px; height: 30px;"
+                                                                            width="110" height="30">
+                                                                    </div>
+                                                                </div>
+                                                                <div data-editorblocktype="Text"
+                                                                    style="margin: 20px 10px 10px;">
+                                                                    <p style="text-align: center;">
+                                                                        <span style="color:#00155c;">© <span
+                                                                                id="year"></span>
+                                                                            APN Promise S.A.</span>
+                                                                    </p>
+                                                                    <div tabindex="0"
+                                                                        id="toolbarnav_block77d49258ac7be1742827121173"
+                                                                        aria-label="[Navigate to toolbar]" role="button"
+                                                                        class="editorAccessibilityButton"></div>
+                                                                </div>
+                                                            </th>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </th>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
