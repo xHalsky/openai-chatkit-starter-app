@@ -256,13 +256,16 @@ export function CustomChat() {
         {messages.length === 0 && (
           <div className="flex flex-col items-center justify-center h-full text-center gap-4">
             <img
-              src="https://assets-eur.mkt.dynamics.com/0f0df1a6-2f4d-47d5-a0cd-1db1ee224907/digitalassets/images/2a1dfef2-262d-f111-88b4-6045bdde9566?ts=639105748851618099"
-              alt="Dynamics 365"
+              src="https://assets-eur.mkt.dynamics.com/0f0df1a6-2f4d-47d5-a0cd-1db1ee224907/digitalassets/images/a9ff4949-d42d-f111-88b4-000d3a6960fe?ts=639106493271573567"
+              alt="Dynamics 365 Landing Page Assistant"
               className="w-32 h-32 object-contain"
             />
             <div>
               <p className="font-semibold text-slate-700 dark:text-slate-200 text-xl">
                 Dynamics 365 Landing Page Assistant
+              </p>
+              <p className="text-sm font-medium text-slate-500 dark:text-slate-400 mt-1">
+                Brought to you by Promise Group Marketing Crew
               </p>
               <p className="text-sm text-slate-400 mt-1.5 max-w-sm">
                 Paste your event details to generate a code for Dynamics 365 landing page.

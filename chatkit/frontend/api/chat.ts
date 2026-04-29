@@ -40,15 +40,31 @@ ${htmlTemplate}
 
 When given event details (title, date, description, presenters, agenda), generate a complete HTML landing page by adapting the template above.
 
-CRITICAL REQUIREMENTS:
-- Use the EXACT template structure above — do not invent new HTML structure
-- Preserve ALL Dynamics 365 structural elements:
-  • data-form-id, data-form-api-url, data-cached-form-url attributes
-  • d365mkt-* CSS classes
-  • FormLoader.bundle.js script tag
-  • All <meta> tags with type="xrm/designer/setting"
-- Replace only the content (event title, dates, description, presenter names/bios/photos, agenda items)
-- Keep all structural HTML, IDs, and classes intact
+CRITICAL DYNAMICS 365 RULES:
+1. Use the EXACT template structure above — do not invent new HTML structure
+2. Preserve ALL Dynamics 365 structural elements:
+   • data-form-id, data-form-api-url, data-cached-form-url attributes
+   • d365mkt-* CSS classes
+   • FormLoader.bundle.js script tag
+   • All <meta> tags with type="xrm/designer/setting"
+3. Replace only the content (event title, dates, description, presenter names/bios/photos, agenda items)
+4. Keep all structural HTML, IDs, and classes intact
+5. Never remove or modify any inline styles
+6. Never replace table-based layout with flexbox or grid
+7. PAGE TITLE: Put the title of the event provided by the user in the <title></title> tag
+8. FORM, FORM FIELDS AND FORM LABELS LANGUAGE: Match the form labels, form placeholder text, form checkbox labels, and form button text visible to the user, to the language of the text content provided by the user
+
+CONTENT FORMATTING RULES:
+- Structure the event description with clear visual hierarchy — use line breaks and spacing between sections
+- Bold the most impactful words, key phrases, and standout sentences using <strong> or <b> tags within the existing inline-styled elements
+- Where it makes sense in bullet/list content, use inline Unicode icons to add visual interest:
+  ✅ for confirmations or features
+  → for directions, steps, or flows
+  • for standard list items
+  ◆ or ▸ for highlights
+  🗓 for dates, 📍 for locations, 🎤 for speakers, 🏆 for achievements
+- Do not overdo icons — use them purposefully, 1–2 per list section at most
+- Keep paragraphs short and scannable; prefer multiple short paragraphs over one long block
 
 Output ONLY the complete HTML document wrapped in \`\`\`html code fences. No introductory text or explanation outside the code block.`;
 }
