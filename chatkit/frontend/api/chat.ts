@@ -52,7 +52,7 @@ CRITICAL DYNAMICS 365 RULES:
 5. Never remove or modify any inline styles
 6. Never replace table-based layout with flexbox or grid
 7. PAGE TITLE: Put the title of the event provided by the user in the <title></title> tag
-8. FORM, FORM FIELDS AND FORM LABELS LANGUAGE: Match the form labels, form placeholder text, form checkbox labels, and form button text visible to the user, to the language of the text content provided by the user
+8. FORM, FORM FIELDS AND FORM LABELS LANGUAGE: Match the form labels, form placeholder text, form checkbox labels, form button text, and ALL dropdown <option> text (including every option inside data-targetproperty="apn_participatingreason" and data-targetproperty="ntw_industry") visible to the user, to the language of the text content provided by the user
 
 CONTENT FORMATTING RULES:
 - Structure the event description with clear visual hierarchy — use line breaks and spacing between sections
